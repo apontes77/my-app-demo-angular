@@ -1,0 +1,44 @@
+<!-- As a heading -->
+<nav class="navbar navbar-light bg-light">
+  <span class="navbar-brand mb-0 h1">Inserindo Test Plan</span>
+</nav>
+
+<div class="geral">
+  <form  class="form-horizontal" [formGroup]="formulario" (ngSubmit)="onSubmit()">
+    <div class="form-group" >
+  
+      <div class="col-sm-12">
+        <label for="name" class="control-label">Test Plan</label>
+      </div>
+  
+      <div class="col-sm-12">
+        <input type="text" class="form-control" formControlName="name" 
+          id="name" placeholder="name" >
+       </div>
+
+       <div class="col-sm-12">
+        <label for="areaPath" class="control-label">Area Path</label>
+      </div>
+  
+      <div class="col-sm-12">
+        <input type="text" class="form-control" formControlName="areaPath" 
+          id="areaPath" placeholder="areaPath" >
+       </div>
+
+       <div class="col-sm-12">
+        <label for="iteration" class="control-label">Iteration</label>
+      </div>
+  
+      <div class="col-sm-12">
+        <input type="text" class="form-control" formControlName="iteration" 
+          id="iteration" placeholder="iteration" >
+       </div>
+    
+  
+    <button type="submit" class="btn btn-primary">Enviar</button>
+    <button  class="btn btn-danger" (click)="resetar()">Cancelar</button>
+  
+    <!-- <app-form-debug [form]="formulario"></app-form-debug> -->
+  </div>
+  </form>
+</div>

@@ -1,0 +1,17 @@
+ .form-horizontal {
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+    margin-top: 60px;
+}
+
+.col-sm-12 {
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 30px;
+    margin-left: 30px;
+} 

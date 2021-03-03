@@ -1,0 +1,53 @@
+<!-- As a heading -->
+<nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">Inserindo Test Case</span>
+  </nav>
+  
+  <div class="geral">
+    <form  class="form-horizontal" [formGroup]="formulario" (ngSubmit)="onSubmit()">
+      <div class="form-group" >
+    
+        <div class="col-sm-12">
+          <label for="testPlanName" class="control-label">Título</label>
+        </div>
+    
+        <div class="col-sm-12">
+          <input type="text" class="form-control" formControlName="testPlanName" 
+            id="testPlanName" placeholder="testPlanName" >
+         </div>
+  
+         <div class="col-sm-12">
+          <label for="areaPath" class="control-label">Area Path</label>
+        </div>
+    
+        <div class="col-sm-12">
+          <input type="text" class="form-control" formControlName="areaPath" 
+            id="areaPath" placeholder="areaPath" >
+         </div>
+  
+         <div class="col-sm-12">
+          <label for="iteration" class="control-label">Iteration</label>
+        </div>
+    
+        <div class="col-sm-12">
+          <input type="text" class="form-control" formControlName="iteration" 
+            id="iteration" placeholder="iteration" >
+         </div>
+
+         <div class="col-sm-12">
+            <label for="steps" class="control-label">Passos</label>
+          </div>
+      
+          <div class="col-sm-12">
+            <input type="text" class="form-control" formControlName="steps" 
+              id="steps" placeholder="steps" >
+           </div>
+      
+    
+      <button type="submit" class="btn btn-primary">Enviar</button>
+      <button  class="btn btn-danger" (click)="resetar()">Cancelar</button>
+    
+      <!-- <app-form-debug [form]="formulario"></app-form-debug> -->
+    </div>
+    </form>
+  </div>
