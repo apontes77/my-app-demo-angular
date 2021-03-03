@@ -6,7 +6,8 @@ import {TestCaseComponent} from 'src/app/test-case/test-case.component'
 
 const routes: Routes = [
   { path: 'testPlan', component: TestPlanComponent },
-  { path: 'testCase', component: TestCaseComponent }
+  { path: 'testCase', component: TestCaseComponent },
+  { path: '', redirectTo:'testPlan'}
 ];
 
 @NgModule({
