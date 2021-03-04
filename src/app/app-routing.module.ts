@@ -10,17 +10,18 @@ path:'',
 component: AppComponent,
 children:[
   {
-    path: 'testCase',
+    path: '/testCase',
     loadChildren: () => import('../app/test-case/test-case.component')
                       .then(t => t.TestCaseComponent)
   },
   {
-    path: 'testPlan',
+    path: '/testPlan',
     loadChildren: () => import('../app/test-plan/test-plan.component')
                       .then(t => t.TestPlanComponent)
   }
 ]
-}];
+},{path:'testCase', component: TestCaseComponent},
+{path:'testPlan', component: TestPlanComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
