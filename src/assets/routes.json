@@ -7,8 +7,11 @@
     },
     {
       "route": "/testPlan",
-      "serve": "/src/app/test-plan/test-plan.component.html",
-      "statusCode": 200
+      "serve": "../app/test-plan"
+    },
+    {
+      "route": "/testCase",
+      "serve": "../app/test-case"
     }
   ]
 }
