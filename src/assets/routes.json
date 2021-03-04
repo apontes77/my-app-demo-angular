@@ -6,12 +6,10 @@
       "statusCode": 200
     },
     {
-      "route": "/testPlan",
-      "serve": "../app/test-plan"
+      "route": "/testPlan"
     },
     {
-      "route": "/testCase",
-      "serve": "../app/test-case"
+      "route": "/testCase"
     }
   ]
 }
